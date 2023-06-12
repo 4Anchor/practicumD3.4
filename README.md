@@ -1,6 +1,6 @@
 ## PracticumD3.4
 
-### Firs add user\password
+### First add user\password
 
 ```
 sudo apt-get install apache2-utils
