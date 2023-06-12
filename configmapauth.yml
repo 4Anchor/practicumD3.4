@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: basicauth
+  namespace: sf-practic
+data:
+  htpasswd: |
+    user1:$apr1$JUEvTv6p$HoZB56vCFioNXhucRfWNP/

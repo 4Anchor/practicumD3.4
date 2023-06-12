@@ -1,0 +1,24 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-config
+  namespace: sf-practic
+data:
+  nginx.conf: | 
+    user nginx;
+    worker_processes  1;
+    events {
+      worker_connections  10240;
+    }
+    http {
+      server {
+          listen       80;
+          server_name  localhost;
+          location / {
+            auth_basic           "Administrator’s Area";
+            auth_basic_user_file /etc/auth/htpasswd; 
+            root   /usr/share/nginx/html;
+            index  index.html index.htm;
+        }
+      }
+    }
