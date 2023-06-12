@@ -11,3 +11,5 @@ htpasswd -c auth user1
 #### New password:
 #### cat auth
 
+## Для успешного деплоя манифестов, в Kubernetes должен быть обязательно создан: 
+### namespace: sf-practic
